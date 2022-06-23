@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page d'acceuil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- choisissez une police google fonts et ajoutez-la ici -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&family=Lobster&family=Macondo&family=Nunito:it
+        l,wght@1,200&family=Odibee+Sans&family=Oleo+Script+Swash+Caps:wght@400;700&family=Playfair+Display:ital@1&family=
+        Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+        <!-- on ira ajouter dans le CSS ensuite : font-family: 'nuiti', sans serif -->
+        <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="description" content="un site multies pages HTML - CSS">
+</head>
+<body>
+    
+
+    <!-- header>div*4 -->
+    <header>
+        <div id="logo"> 
+           <a href="#logo"> 
+            <button type="button">
+                <i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i>
+                <!-- fa. => classe de fontAwesome -->
+                <!-- aria-... accès de contenus web plus faciles pour les handicapés => -->
+                <!-- https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+            </button>
+            </a>
+            <img src="img/logo.png" alt="logo">
+        </div> <!-- ./ #logo-->
+
+        <div id="slogan"><h1>site HTML CSS multies pages</h1></div>
+
+        <div id="social">
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://www.twitter.com/" target="_blank">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            
+
+        </div>
+        
+        <div class="clear"></div>
+    </header>
+
+    
+    <nav id="activ_nav">
+        <a href="acceuil.HTML">Acceuil</a>
+        <a href="texte.HTML">texte</a>
+        <a href="selecteur.HTML">selecteur</a>
+        <a href="image.HTML">image</a>
+        <a href="position.HTML">position</a>
+        <a href="zoning.HTML">zoning</a>
+        <a href="tableau.HTML">tableau</a>
+        <a href="liste.HTML">liste</a>
+        <a href="lien_menu.HTML">lien & menu</a>
+        <a href="formulaire.HTML">Formulaire</a>
+        <a href="multimedia.HTML">multemedia</a>
+        <a href="animation.HTML">animation</a>
+    </nav>
+
+    <main>
+        <h2>formulaire</h2>
+        <section class="formulaire">
+            <!-- method = maniere de circulation des données  -->
+            <!-- action : url de destination -->
+            <!-- entype : permet d'envoyer un fichier corectement (type d'encodage) -->
+            <form action="url de desitination" enctype="multipart/form-data"></form>
+            <label for="psuedo">pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" required><br>
+
+            <label for="prenom"> prenom</label>
+            <input type="text" name="prenom" id="prenom" placeholder="tapez votre pseudo"><br>
+
+            <label for="password">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp"><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="cv">CV</label>
+            <input type="file" name="cv" id="cv"><br>
+
+            <p>quel sont vos fruits préférés</p>
+            <label for="fraise">fraise</label>
+            <input type="checkbox" name="fraise" id="fraise" value="fraise" checked>
+            <label for="poire">poire</label>
+            <input type="checkbox" name="poire" id="poire" value="poire" >
+            <label for="banane">banane</label>
+            <input type="checkbox" name="banane" id="banane" value="banane" >
+
+            <label for="cp">code postal</label>
+            <input type="texte" name="cp" id="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffre entre 0 et 9 "><br>
+
+            <label for="message">message</label>
+            <textarea name="message" id="message" cols="25" rows="5"></textarea>
+
+            <input type="submit" name="envoyer" id="envoyer">
+            <input type="reset" name="annuler" id="annuler" value="annuler">
+        </section>
+      
+        <section></section>
+    </main>
+
+    <footer></footer>
+
+
+    <script type="text/javascript" src="js/active.js"></script>
+</body>
+</html>

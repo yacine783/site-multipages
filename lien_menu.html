@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page d'acceuil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- choisissez une police google fonts et ajoutez-la ici -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&family=Lobster&family=Macondo&family=Nunito:it
+        l,wght@1,200&family=Odibee+Sans&family=Oleo+Script+Swash+Caps:wght@400;700&family=Playfair+Display:ital@1&family=
+        Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+        <!-- on ira ajouter dans le CSS ensuite : font-family: 'nuiti', sans serif -->
+        <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="description" content="un site multies pages HTML - CSS">
+</head>
+<body>
+    
+
+    <!-- header>div*4 -->
+    <header>
+        <div id="logo"> 
+           <a href="#logo"> 
+            <button type="button">
+                <i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i>
+                <!-- fa. => classe de fontAwesome -->
+                <!-- aria-... accès de contenus web plus faciles pour les handicapés => -->
+                <!-- https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+            </button>
+            </a>
+            <img src="img/logo.png" alt="logo">
+        </div> <!-- ./ #logo-->
+
+        <div id="slogan"><h1>site HTML CSS multies pages</h1></div>
+
+        <div id="social">
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://www.twitter.com/" target="_blank">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            
+
+        </div>
+        
+        <div class="clear"></div>
+    </header>
+
+    
+    <nav id="activ_nav">
+        <a href="acceuil.HTML">Acceuil</a>
+        <a href="texte.HTML">texte</a>
+        <a href="selecteur.HTML">selecteur</a>
+        <a href="image.HTML">image</a>
+        <a href="position.HTML">position</a>
+        <a href="zoning.HTML">zoning</a>
+        <a href="tableau.HTML">tableau</a>
+        <a href="liste.HTML">liste</a>
+        <a href="lien_menu.HTML">lien & menu</a>
+        <a href="formulaire.HTML">Formulaire</a>
+        <a href="multimedia.HTML">multemedia</a>
+        <a href="animation.HTML">animation</a>
+    </nav>
+
+    <main>
+        <h2>Liens & menu</h2>
+
+        <div class="ancre">
+            <a href="#lien">les liens</a>
+            <a href="#menu">menu</a>
+            <a href="#menuderoulant">menu deroulant</a>
+        </div>
+
+        <section>
+            <!-- dans le lien nous autons aussi title (title ="xxxxxx") pour ouvrir fenetre d'info au passage de la souris sur le lien et (target="blank")
+            pour envoyer sur un autre onglet -->
+            <h3>les liens</h3>
+            <a href="https://codepen.io/" title="se rendre sur le site de Code Pen" target="_blank"> code presse </a>
+            is a social developement anviremont for front-end designers and developers. <br>
+            <a href="https://www.google.com" target="_blank">google</a> le moteur de recherche. <br>
+            <!-- on peut ajouter juste un downlead dans le lien pour rendre téléchargable le fichier -->
+            <a href="fichier/cv.pdfqd" target="_blank"> télécharger mon CV</a>
+
+            <!-- pour imprimer ma page  -->
+            <a href="#" onclick="window.print()">imprimer ma page</a>
+
+            <!-- pour rendre cliquable une image et renvoyer sur le lien inserer dessus  -->
+            <a href="https://www.facebook.com/" target="_blank"> <img src="img/facebook.ico" alt=""></a><br>
+
+            <!-- inséré le lien juste dans "ici qui renvvoie sur une autre page de mon site " -->
+            clique <a href="acceuil.html">Ici</a>pour vous rendre sur la page <div class=""></div>
+
+        </section>
+
+        <section id="id">
+            <h3>les menus</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">acceuil</a></li>
+                    <li><a href="#">parcours</a></li>
+                    <li><a href="#">realisations</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="menuderoulant">
+            <h3>les mennus déroulants</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li><a href="#"> acceuil</a></li>
+                    <li class="sousmenu"> <a href="#">formation</a>
+                        <ul class="niveau2">
+                            <li><a href="#">etudiants</a></li>
+                            <li><a href="#">Emploi du temp</a></li>
+                            <li><a href="#">recherche d'emploi</a></li>
+                            <li><a href="#">document</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">information</a></li>
+
+                    <li class="sousMenu"><a href="#">cours</a>
+                        <ul class="niveau2">
+                            <li><a href="#">internet</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">reseaux sociaux</a></li>
+                            <li><a href="#">référencement</a></li>
+                            <li><a href="#">markiting</a></li>
+                            <li><a href="#">cahier des charges</a></li>
+                            <li><a href="#">photoshop</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+    
+    <footer></footer>
+
+
+    <script type="text/javascript" src="js/active.js"></script>
+</body>
+</html>
